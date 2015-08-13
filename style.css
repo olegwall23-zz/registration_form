@@ -1,0 +1,92 @@
+/*
+	Theme Name: CSS3 Contact Form
+	Date: April 2013
+	Description: Basic HTML5/CSS3 contact form
+	Version: 1.0
+	Author: Christian Vasile
+	Author URL: http://christianvasile.com
+*/
+
+/* ===========================
+   ======= Body style ======== 
+   =========================== */
+
+.thumb {
+	height: 50px;
+	/*margin: 10px 5px 0 0;*/
+}
+
+/* === Remove input autofocus webkit === */
+*:focus {outline: none;}
+
+/* === Form Typography === */
+.registrationForm {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; padding: 50px 150px;}
+.form h2, .form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .required_notification {font-size: 11px;}
+
+h2 {
+	margin-bottom: 20px;
+	color: #474E69;
+}
+
+/* ===========================
+   ====== Contact Form =======
+   =========================== */
+
+input, select {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 276px;
+	color: #999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus,
+select:focus, select:hover {
+	border-color: 1px solid #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+}
+
+/* ===========================
+   ====== Submit Button ======
+   =========================== */
+
+.submit input {
+	width: 100px;
+	height: 40px;
+	background-color: #474E69;
+	color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/*//-----------*/
+
+/* === Remove input autofocus webkit === */
+
+
+/* === HTML5 validation styles === */
+.formRequired, .form textarea:required {
+	/*background: #fff url(images/red_asterisk.png) no-repeat 98% center;*/
+}
+.formValid {
+	/*background: #fff url(images/valid.png) no-repeat 90% center;*/
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #5cd053;
+}
+.formInvalid {
+	/*background: #fff url(images/invalid.png) no-repeat 98% center;*/
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}

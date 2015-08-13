@@ -1,0 +1,29 @@
+CREATE TABLE Captcha (
+  id MEDIUMINT NOT NULL,
+  captcha CHAR(8) NOT NULL,
+  create_date DATE NOT NULL,
+  INDEX name (id, create_date)
+);
+
+-- image table
+CREATE TABLE UserImage (
+  image_id INT NOT NULL AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  image BLOB NOT NULL,
+  image_name VARCHAR(64) NOT NULL,
+  INDEX name (user_id),
+  PRIMARY KEY (image_id)
+);
+
+-- user table
+CREATE TABLE User (
+  user_id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(64) NOT NULL,
+  surname VARCHAR(64) NOT NULL,
+  email VARCHAR(64) NOT NULL,
+  password VARCHAR(64) NOT NULL,
+  birthday DATE NOT NULL,
+  gender BIT(1) NOT NULL,
+  PRIMARY KEY (user_id),
+  INDEX name (email)
+);
